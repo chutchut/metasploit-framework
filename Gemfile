@@ -11,7 +11,7 @@ end
 
 group :development do
   # Markdown formatting for yard
-  gem 'redcarpet'
+  gem 'redcarpet', '>= 3.5.1'
   # generating documentation
   gem 'yard'
   # for development and testing purposes
@@ -29,7 +29,7 @@ group :development, :test do
   # Make rspec output shorter and more useful
   gem 'fivemat'
   # running documentation generation tasks and rspec tasks
-  gem 'rake'
+  gem 'rake', '>= 12.3.3'
   # Define `rake spec`.  Must be in development AND test so that its available by default as a rake test when the
   # environment is development
   gem 'rspec-rails'
