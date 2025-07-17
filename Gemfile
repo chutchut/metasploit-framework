@@ -17,22 +17,22 @@ group :development do
   # for development and testing purposes
   gem 'pry'
   # module documentation
-  gem 'octokit'
+  gem 'octokit', '>= 4.8.0'
   # metasploit-aggregator as a framework only option for now
   # Metasploit::Aggregator external session proxy
-  gem 'metasploit-aggregator'
+  gem 'metasploit-aggregator', '>= 0.2.2'
 end
 
 group :development, :test do
   # automatically include factories from spec/factories
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   # Make rspec output shorter and more useful
   gem 'fivemat'
   # running documentation generation tasks and rspec tasks
   gem 'rake'
   # Define `rake spec`.  Must be in development AND test so that its available by default as a rake test when the
   # environment is development
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.7.0'
   gem 'rspec-rerun'
 end
 
